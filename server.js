@@ -47,6 +47,10 @@ app.get("/getFiles", (req,res) => {
     })
 })
 
+app.get("/", (req,res) => {
+    res.send("Add '.../createFile' to the link for creating a text file and Add '.../getFiles' to the link for retrieving all the files created");
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
